@@ -5809,3 +5809,70 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.margin-3 {
+  margin-top: 30px; }
+
+.tofu-heading img {
+  width: 55px;
+  margin-left: 40px;
+  margin-bottom: 25px; }
+.tofu-heading h2 {
+  font-family: "Neuton", serif;
+  font-size: 25px;
+  color: white;
+  margin-left: 5px;
+  display: inline-block; }
+
+.dog-description {
+  margin-top: 25vh; }
+
+.dog-description p {
+  color: white;
+  font-family: "Neuton", serif;
+  font-weight: 400;
+  font-size: 40px; }
+
+.dog-description-gram {
+  color: #FFE027;
+  text-decoration: none;
+  border-bottom: 3px solid #FFE027;
+  padding-bottom: 3px; }
+  .dog-description-gram:hover {
+    color: #004EBF;
+    text-decoration: none;
+    border-color: #004EBF; }
+
+.dog-description-mum {
+  color: #FF1E48;
+  text-decoration: none;
+  border-bottom: 3px solid #FF1E48;
+  padding-bottom: 3px; }
+  .dog-description-mum:hover {
+    color: #004EBF;
+    text-decoration: none;
+    border-color: #004EBF; }
+
+.tofu-background {
+  background-image: url("../img/tofu2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px; }
+
+@media (max-width: 767px) {
+  .tofu-background {
+    background-position: right;
+    background-size: cover;
+    height: 700px; }
+
+  .dog-description {
+    margin-top: 5vh; }
+
+  .tofu-heading img {
+    width: 60px; }
+  .tofu-heading h2 {
+    font-size: 30px;
+    margin-left: 10px; }
+
+  .dog-description p {
+    font-size: 30px; } }

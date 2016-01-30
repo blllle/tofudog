@@ -5882,13 +5882,15 @@ button.close {
   .tofu-background {
     background-position: center;
     background-size: cover;
-    height: 700px; }
+    height: 100vh; }
 
   .dog-description {
-    margin-top: 5vh; }
+    margin-top: 5vh;
+    text-align: left; }
 
   .tofu-heading img {
-    width: 60px; }
+    width: 60px;
+    margin-left: 25px; }
   .tofu-heading h2 {
     font-size: 30px;
     margin-left: 10px; }

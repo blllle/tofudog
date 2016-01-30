@@ -2,9 +2,21 @@
 
 $heading:    'Neuton', serif;
 
+$lightBlue:   #E2F5F4;
+$pink:        #FF1E48;    
+$yellow:      #FFE027;
+$darkBlue:    #004EBF;
+
 
 .margin-3 {
   margin-top: 30px;
+}
+
+.tofu-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .tofu-heading {
@@ -32,44 +44,61 @@ $heading:    'Neuton', serif;
   font-family: $heading;
   font-weight: 400;
   font-size: 40px;
+  text-shadow: 0px 4px 15px rgba(0,0,0,0.7);
+  &::selection {
+    background-color: $lightBlue;
+  }
 }
 
 .dog-description-gram {
-  color: #FFE027;
+  color: $yellow;
   text-decoration: none;
-  border-bottom: 3px solid #FFE027;
+  border-bottom: 3px solid $yellow;
   padding-bottom: 3px;
   &:hover {
-  color: #004EBF; 
+  color: $darkBlue; 
   text-decoration: none;
-  border-color: #004EBF;       
-  }  
+  border-color: $darkBlue;       
+  } 
+  &::selection {
+    background-color: $lightBlue;
+  } 
 }
 
 .dog-description-mum {
-  color: #FF1E48;
+  color: $pink;
   text-decoration: none;
-  border-bottom: 3px solid #FF1E48;
+  border-bottom: 3px solid $pink;
   padding-bottom: 3px;    
   &:hover {
-  color: #004EBF; 
+    color: $darkBlue; 
+    text-decoration: none;
+    border-color: $darkBlue;        
+  }
+  &::selection {
+    background-color: $lightBlue;
+  }
+}
+
+.dog-description-refresh {
+  color: #63A0D4;
   text-decoration: none;
-  border-color: #004EBF;        
+  border-bottom: 3px solid #63A0D4;
+  padding-bottom: 3px;    
+  &:hover {
+    color: $darkBlue; 
+    text-decoration: none;
+    border-color: $darkBlue;        
+  }
+  &::selection {
+    background-color: $lightBlue;
   }
 }
 
 
-.tofu-background {
-  background-image: url('../img/tofu2.jpg'); 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
 @media (max-width: 767px) {
   .tofu-background {
-    background-position: right;
+    background-position: center;
     background-size: cover;
     height: 700px;
   }

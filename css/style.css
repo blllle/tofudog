@@ -5812,6 +5812,12 @@ button.close {
 .margin-3 {
   margin-top: 30px; }
 
+.tofu-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
 .tofu-heading img {
   width: 55px;
   margin-left: 40px;
@@ -5830,7 +5836,10 @@ button.close {
   color: white;
   font-family: "Neuton", serif;
   font-weight: 400;
-  font-size: 40px; }
+  font-size: 40px;
+  text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); }
+  .dog-description p::selection {
+    background-color: #E2F5F4; }
 
 .dog-description-gram {
   color: #FFE027;
@@ -5841,6 +5850,8 @@ button.close {
     color: #004EBF;
     text-decoration: none;
     border-color: #004EBF; }
+  .dog-description-gram::selection {
+    background-color: #E2F5F4; }
 
 .dog-description-mum {
   color: #FF1E48;
@@ -5851,17 +5862,24 @@ button.close {
     color: #004EBF;
     text-decoration: none;
     border-color: #004EBF; }
+  .dog-description-mum::selection {
+    background-color: #E2F5F4; }
 
-.tofu-background {
-  background-image: url("../img/tofu2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh; }
+.dog-description-refresh {
+  color: #63A0D4;
+  text-decoration: none;
+  border-bottom: 3px solid #63A0D4;
+  padding-bottom: 3px; }
+  .dog-description-refresh:hover {
+    color: #004EBF;
+    text-decoration: none;
+    border-color: #004EBF; }
+  .dog-description-refresh::selection {
+    background-color: #E2F5F4; }
 
 @media (max-width: 767px) {
   .tofu-background {
-    background-position: right;
+    background-position: center;
     background-size: cover;
     height: 700px; }
 

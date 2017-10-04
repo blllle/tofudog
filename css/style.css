@@ -5809,91 +5809,113 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@font-face {
+  font-family: 'AvenirLTStd-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url("AvenirLTStd-Medium.otf") format("otf"); }
 .margin-3 {
   margin-top: 30px; }
 
 .tofu-background {
-  background-color: #3C438E;
+  background-color: #0000FF;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh; }
+  height: 90vh; }
 
 .tofu-heading img {
-  width: 55px;
+  width: 105px;
   margin-left: 40px;
-  margin-bottom: 25px; }
-.tofu-heading h2 {
-  font-family: "Neuton", serif;
-  font-size: 25px;
-  color: white;
-  margin-left: 5px;
-  display: inline-block; }
+  margin-bottom: 25px;
+  text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); }
 
 .dog-description {
-  margin-top: 25vh; }
-
-.dog-description p {
-  color: white;
-  font-family: "Neuton", serif;
-  font-weight: 400;
-  font-size: 40px;
-  text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); }
-  .dog-description p::selection {
-    background-color: #E2F5F4; }
-
-.dog-description-gram {
-  color: #FFE027;
-  text-decoration: none;
-  border-bottom: 3px solid #FFE027;
-  padding-bottom: 3px; }
-  .dog-description-gram:hover {
-    color: #004EBF;
-    text-decoration: none;
-    border-color: #004EBF; }
-  .dog-description-gram::selection {
-    background-color: #E2F5F4; }
-
-.dog-description-mum {
-  color: #FF1E48;
-  text-decoration: none;
-  border-bottom: 3px solid #FF1E48;
-  padding-bottom: 3px; }
-  .dog-description-mum:hover {
-    color: #004EBF;
-    text-decoration: none;
-    border-color: #004EBF; }
-  .dog-description-mum::selection {
-    background-color: #E2F5F4; }
+  margin-top: 15vh; }
+  .dog-description h2 {
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "AvenirLTStd-Medium", sans-serif;
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); }
+  .dog-description p {
+    color: white;
+    font-family: "AvenirLTStd-Medium", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); }
+    .dog-description p::selection {
+      background-color: #FF1E48; }
 
 .dog-description-refresh {
-  color: #63A0D4;
-  text-decoration: none;
-  border-bottom: 3px solid #63A0D4;
-  padding-bottom: 3px; }
+  padding: 10px 30px;
+  background-color: white;
+  border: 3px solid #0000FF;
+  border-radius: 4px; }
   .dog-description-refresh:hover {
-    color: #004EBF;
+    background-color: #0000FF;
+    border: 3px solid #0000FF; }
+
+a.dog-description-refresh {
+  color: #0000FF;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: "AvenirLTStd-Medium", sans-serif; }
+  a.dog-description-refresh:hover {
+    color: white; }
+
+.footer {
+  background-color: white;
+  height: 10vh; }
+  .footer a, .footer p {
+    font-family: "AvenirLTStd-Medium", sans-serif;
+    color: #0000FF;
     text-decoration: none;
-    border-color: #004EBF; }
-  .dog-description-refresh::selection {
-    background-color: #E2F5F4; }
+    vertical-align: bottom;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px; }
+  .footer p {
+    color: #FF1E48;
+    font-size: 12px;
+    padding-top: 5px;
+    display: inline-block;
+    margin-bottom: 0px; }
+  .footer .footer-left {
+    text-align: left;
+    margin: 3vh 0; }
+  .footer .footer-right {
+    text-align: right;
+    margin: 3vh 0; }
 
 @media (max-width: 767px) {
   .tofu-background {
     background-position: center;
-    background-size: cover;
-    height: 100vh; }
+    height: 85vh; }
 
   .dog-description {
     margin-top: 5vh;
     text-align: left; }
+    .dog-description h2 {
+      font-size: 28px;
+      margin-left: 10px; }
+    .dog-description p {
+      font-size: 16px; }
 
   .tofu-heading img {
-    width: 60px;
-    margin-left: 25px; }
-  .tofu-heading h2 {
-    font-size: 30px;
-    margin-left: 10px; }
+    width: 90px;
+    margin-left: 20px; }
 
-  .dog-description p {
-    font-size: 30px; } }
+  .footer {
+    height: 15vh; }
+
+  .footer > .footer-left {
+    text-align: center;
+    margin: 10px 0 20px; }
+
+  .footer > .footer-right {
+    text-align: center;
+    margin: 20px 0 10px; } }
